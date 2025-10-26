@@ -5,7 +5,7 @@
 	int yyerror();
 %}
 
-%token NUM NL
+%token NUM
 %left '+' '-'
 %left '*' '/'
 %left '(' ')'
