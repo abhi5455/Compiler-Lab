@@ -3,10 +3,10 @@
 	int yylex();
 	int yyerror();
 %}
-%token ALPHA BETA
+%token LOCAL DOMAIN
 %%
 start: S '\n' {printf("Valid Email Address\n"); return 0;}
-S : ALPHA BETA
+S : LOCAL DOMAIN
 %%
 
 int main (){
