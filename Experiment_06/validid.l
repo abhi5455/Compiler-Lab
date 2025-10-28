@@ -3,7 +3,7 @@
 %}
 %option noyywrap
 %%
-[a-z_A-Z][a-z_A-Z0-9]*	{return ALPHA;}
+[a-z_A-Z]	{return ALPHA;}
 [0-9]	{return DIGIT;}
 \n	{return '\n';}
 .	{return yytext[0];}
