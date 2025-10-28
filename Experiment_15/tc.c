@@ -38,7 +38,7 @@ int main(){
     printf("E.g. s = a + b\n");
     for(int i=0;i<num_instr;i++)
     {
-        scanf("%s = %s %c %s",&tac[i].res,&tac[i].opnd1,&tac[i].op,&tac[i].opnd2);
+        scanf("%s = %s %c %s",tac[i].res,tac[i].opnd1,&tac[i].op,tac[i].opnd2);
     }
 
     printf("Equivalent Assembly code is:\n");
